@@ -10,7 +10,7 @@ class MyAdapter(private val signalList: ArrayList<MessageItem>):
 RecyclerView.Adapter<MyAdapter.MyViewHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
-     val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_main,
+     val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item,
      parent,false)
         return MyViewHolder(itemView)
     }
@@ -19,8 +19,6 @@ RecyclerView.Adapter<MyAdapter.MyViewHolder>()
         val currentItem = signalList[position]
         holder.profile.setImageResource(currentItem.profile)
         holder.username.text = currentItem.name
-
-
     }
 
     override fun getItemCount(): Int {

@@ -6,17 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/epawo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/epawo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/profilebackground"
         android:layout_width="350dp"
         android:layout_height="90dp"
-        android:layout_marginTop="68dp"
-
+        android:layout_marginTop="16dp"
         android:background="@drawable/layout_orange"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/epawo">
 
         <TextView
             android:id="@+id/username"
@@ -33,91 +44,143 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/julius"
-            app:layout_constraintTop_toTopOf="@+id/username"
             app:layout_constraintEnd_toStartOf="@id/username"
+            app:layout_constraintTop_toTopOf="@+id/username"
             tools:layout_editor_absoluteX="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background2"
+        android:layout_width="320dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/layout_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilebackground">
+
+        <ImageView
+            android:id="@+id/activegreen"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/active"
+            app:layout_constraintEnd_toStartOf="@+id/Active"
+            app:layout_constraintTop_toTopOf="@+id/Active"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <TextView
+            android:id="@+id/Active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/active"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/background2"
+            app:layout_constraintTop_toTopOf="@+id/background2" />
+
+        <TextView
+            android:id="@+id/customerTier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="92dp"
+            android:text="@string/customer_tier_1"
+            app:layout_constraintEnd_toEndOf="@+id/background2"
+            app:layout_constraintTop_toTopOf="@+id/background2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="125dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/julius_olamide"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/background2"
+            app:layout_constraintTop_toTopOf="@+id/background2" />
+
+        <TextView
+            android:id="@+id/ngn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/n"
+            app:layout_constraintEnd_toEndOf="@+id/background2"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/background2"
+            app:layout_constraintTop_toBottomOf="@+id/customerTier" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="102dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/layout_orange"
+            app:layout_constraintEnd_toEndOf="@+id/background2"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="@+id/background2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="16dp"
+                android:text="@string/_2133300901"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
         android:text="@string/quick_operation"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/background2"
         app:layout_constraintTop_toBottomOf="@+id/background2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
         android:layout_width="69dp"
         android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="@+id/arrowbackground"
-        app:layout_constraintStart_toStartOf="@+id/profilebackground"
-        app:layout_constraintTop_toTopOf="@+id/arrowbackground">
+        android:layout_marginTop="12dp"
+        android:background="@drawable/layout_white"
+        app:layout_constraintEnd_toStartOf="@+id/arrowbackground"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardwavebackground"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
-            android:id="@+id/cashout"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/cashout"
+            android:id="@+id/arrow"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:src="@drawable/arrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/arrowbackground"
-        android:layout_width="69dp"
-        android:layout_height="70dp"
-        android:background="@drawable/layout_white"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="409dp">
-
-        <ImageView
-            android:id="@+id/arrow"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/arrow"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="8dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardwavebackground"
-        android:layout_width="69dp"
-        android:layout_height="70dp"
-        android:background="@drawable/layout_white"
-
-        app:layout_constraintBottom_toBottomOf="@+id/phonewavebackground"
-        app:layout_constraintTop_toTopOf="@+id/phonewavebackground"
-        tools:layout_editor_absoluteX="218dp">
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/cardwave"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="7dp"
-            tools:layout_editor_absoluteY="8dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/phonewavebackground"
         android:layout_width="69dp"
         android:layout_height="70dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/layout_white"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="409dp">
+        app:layout_constraintEnd_toEndOf="@+id/profilebackground"
+        app:layout_constraintTop_toBottomOf="@+id/background2">
 
         <ImageView
             android:id="@+id/phonewave"
@@ -132,99 +195,47 @@
             tools:layout_editor_absoluteY="7dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/epawo2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="98dp" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/background2"
-        android:layout_width="320dp"
-        android:layout_height="143dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="profilebackground"
+        android:id="@+id/cardwavebackground"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
         android:background="@drawable/layout_white"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="189dp">
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/activegreen"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/active"
-            app:layout_constraintEnd_toStartOf="Active"
-            app:layout_constraintTop_toTopOf="Active"
-            tools:layout_editor_absoluteX="235dp"
-            tools:layout_editor_absoluteY="24dp" />
+            android:id="@+id/cashout"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:src="@drawable/cashout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/Active"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/active"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="background2"
-            app:layout_constraintEnd_toEndOf="background2"
-            tools:layout_editor_absoluteX="274dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/arrowbackground"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/layout_white"
+        app:layout_constraintEnd_toStartOf="@+id/phonewavebackground"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/background2">
 
-        <TextView
-            android:id="@+id/customerTier"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/customer_tier_1"
-            app:layout_constraintEnd_toEndOf="background2"
-            app:layout_constraintTop_toTopOf="background2"
-            tools:layout_editor_absoluteX="110dp"
-            tools:layout_editor_absoluteY="46dp" />
-
-        <TextView
-            android:id="@+id/ngn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/n"
-            app:layout_constraintEnd_toEndOf="background2"
-            app:layout_constraintTop_toBottomOf="customerTier"
-            tools:layout_editor_absoluteX="93dp"
-            tools:layout_editor_absoluteY="80dp" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="102dp"
-            android:layout_height="19dp"
-            android:background="@drawable/layout_orange"
-            app:layout_constraintEnd_toEndOf="background2"
-            app:layout_constraintTop_toBottomOf="ngn"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="117dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_2133300901"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="background2"
-                app:layout_constraintTop_toBottomOf="ngn"
-                tools:layout_editor_absoluteX="11dp"
-                tools:layout_editor_absoluteY="0dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:layout_width="125dp"
-            android:layout_height="17dp"
-            android:text="@string/julius_olamide"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="background2"
-            app:layout_constraintTop_toTopOf="background2"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="24dp" />
-
-
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cardwave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
