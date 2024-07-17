@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LearnViewModel</string>
+    <string name="hi_julius">Hi, Julius</string>
+    <string name="quick_operation">Quick Operation</string>
+    <string name="active">Active</string>
+    <string name="customer_tier_1">Customer Tier 1</string>
+    <string name="n">N*********.***</string>
+    <string name="_2133300901">2133300901</string>
+    <string name="julius_olamide">JULIUS OLAMIDE</string>
+</resources>
