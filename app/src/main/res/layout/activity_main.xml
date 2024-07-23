@@ -12,7 +12,7 @@
         android:id="@+id/epawo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/epawo2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/profilebackground"
         android:layout_width="350dp"
         android:layout_height="90dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/layout_orange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -50,14 +50,15 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/background2"
         android:layout_width="320dp"
         android:layout_height="143dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/layout_white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profilebackground">
 
@@ -137,13 +138,12 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/QuickOperation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="@string/quick_operation"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +160,7 @@
         app:layout_constraintEnd_toStartOf="@+id/arrowbackground"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cardwavebackground"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/QuickOperation">
 
         <ImageView
             android:id="@+id/arrow"
@@ -171,13 +171,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/phonewavebackground"
         android:layout_width="69dp"
         android:layout_height="70dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/layout_white"
         app:layout_constraintEnd_toEndOf="@+id/profilebackground"
         app:layout_constraintTop_toBottomOf="@+id/background2">
@@ -221,7 +223,7 @@
         android:id="@+id/arrowbackground"
         android:layout_width="69dp"
         android:layout_height="70dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/layout_white"
         app:layout_constraintEnd_toStartOf="@+id/phonewavebackground"
         app:layout_constraintHorizontal_bias="0.5"
@@ -237,6 +239,125 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/TextCahout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Cash Out"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TextTransfer"
+        app:layout_constraintEnd_toStartOf="@+id/TextTransfer"
+        app:layout_constraintTop_toTopOf="@+id/TextTransfer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:text="Transfer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/TextPayBills"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <TextView
+        android:id="@+id/TextPayBills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="Pay Bills"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TextPhonewave"
+        app:layout_constraintEnd_toStartOf="@+id/TextPhonewave"
+        app:layout_constraintTop_toTopOf="@+id/TextPhonewave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextPhonewave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:text="Airtime"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonewavebackground"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/whitebackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phonewavebackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardwavebackground"
+        app:layout_constraintTop_toBottomOf="@+id/TextTransfer"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/RecentTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:text="Recent Transactions"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/TransactionHistory"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TransactionHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="TransactionHistory"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="40.5dp"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecentTransaction"
+            app:layout_constraintVertical_bias="0.837" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/whitebackground"
+        app:layout_constraintStart_toStartOf="@+id/whitebackground"
+        app:menu="@menu/button_nav" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,8 @@
     <color name="ivory">#FFFFF0</color>
     <color name="beige">#F5F5DC</color>
     <color name="red">#FF3245</color>
+    <color name="faintorange">#FFEFD5</color>
+    <color name="lightorange">#FFA07A</color>
+    <color name="faintgreen">#CCFFCC</color>
+    <color name="darkgreen">#19AF16</color>
 </resources>
