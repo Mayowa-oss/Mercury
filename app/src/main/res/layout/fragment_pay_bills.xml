@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
     tools:context=".PayBillsFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="262dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:text="PayBills is currently in progress"
+        android:textStyle="bold" />
 
 </FrameLayout>

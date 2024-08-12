@@ -27,8 +27,6 @@ class MyAdapter(private val signalList: ArrayList<MessageItem>) :
             holder.figures.setTextColor(Color.parseColor("#19AF16"))
         }
 
-
-
     }
 
     override fun getItemCount(): Int {
